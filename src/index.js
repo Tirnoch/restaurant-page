@@ -1,8 +1,7 @@
 import './styles.css';
-const hamMenu = document.querySelector('.ham-menu');
-const offScreenMenu = document.querySelector('.off-screen-menu');
-
-hamMenu.addEventListener('click', () => {
-  hamMenu.classList.toggle('active');
-  offScreenMenu.classList.toggle('active');
-});
+import navBar from './nav';
+import homePage from './home';
+const content = document.querySelector('#content');
+const header = document.querySelector('header');
+header.appendChild(navBar());
+content.appendChild(homePage());
