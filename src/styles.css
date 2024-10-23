@@ -33,3 +33,66 @@ nav ul li:hover {
 nav ul li:active {
   background-color: rgb(20, 23, 35);
 }
+
+.current {
+  background-color: rgb(10, 13, 25);
+}
+/* CONTENT */
+
+#content {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 79.5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  height: calc(100vh - 79.5px);
+  color: whitesmoke;
+}
+#about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  height: calc(100vh - 79.5px);
+  color: whitesmoke;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  height: calc(100vh - 79.5px);
+  color: whitesmoke;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu-list {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  color: white;
+}
+.menu-list .item {
+  display: flex;
+  flex: 1;
+  min-width: 200px;
+  min-height: 200px;
+  justify-content: center;
+
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+}
